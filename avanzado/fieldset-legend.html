@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIELDSET Y LEGEND</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      form {
+        padding: 20px;
+      }
+      fieldset {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 3px solid #fff;
+        border-radius: 10px;
+      }
+      legend {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      label {
+        font-size: 20px;
+        margin-right: 20px;
+      }
+      input {
+        width: 200px;
+        height: 30px;
+        padding: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FIELDSET Y LEGEND</h1>
+    <form>
+      <fieldset>
+        <legend>Información Básica</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
+        <br />
+        <br />
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" />
+        <br />
+        <br />
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" />
+        <br />
+        <br />
+        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" />
+      </fieldset>
+      <fieldset>
+        <legend>Redes Sociales</legend>
+        <label for="twitter">Twitter:</label>
+        <input type="text" id="twitter" />
+        <br />
+        <br />
+        <label for="instagram">Instagram:</label>
+        <input type="text" id="instagram" />
+      </fieldset>
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

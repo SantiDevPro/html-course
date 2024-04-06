@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML BASICO</title>
+    <style>
+      :root {
+        color-scheme: dark light;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 title="Titulo del sitio">HTML BASICO</h1>
+    <main>
+      <h2>FORMULARIOS</h2>
+      <form>
+        <label>
+          Nombre:
+          <input type="text" name="nombre" placeholder="Escribir nombre" />
+        </label>
+        <br />
+        <label>
+          Clave:
+          <input type="password" name="clave" required />
+        </label>
+        <br />
+        <label>
+          Selecciona uno:
+          <input type="radio" name="genero" />Varon
+          <input type="radio" name="genero" />Mujer
+          <input type="radio" name="genero" />Otro
+        </label>
+        <br />
+        <label>
+          Selecciona uno o más:
+          <input type="checkbox" name="carro" />Tengo carro
+          <input type="checkbox" name="moto" />Tengo moto
+          <input type="checkbox" name="bicicleta" />Tengo bicicleta
+        </label>
+        <br />
+        <label>
+          Selecciona tu color favorito:
+          <input type="color" name="color" />
+        </label>
+        <br />
+        <label>
+          Tu cumpleaños:
+          <input type="date" name="cumple" required />
+        </label>
+        <br />
+        <label>
+          Fecha y hora de registro:
+          <input type="datetime-local" name="daytime" />
+        </label>
+        <br />
+        <label>
+          Correo:
+          <input type="email" name="mail" placeholder="example@example.com" />
+        </label>
+        <br />
+        <label>
+          Archivo:
+          <input type="file" name="archivo" />
+        </label>
+        <br />
+        <label>
+          Numero favorito:
+          <input type="number" name="numero" />
+        </label>
+        <br />
+        <label>
+          Telefono:
+          <input type="tel" name="telefono" />
+        </label>
+        <br />
+        <label>
+          Indique su url:
+          <input type="url" name="link" required />
+        </label>
+        <br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="reset" />
+      </form>
+    </main>
+  </body>
+</html>

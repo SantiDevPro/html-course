@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUDIO Y VIDEO</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      section {
+        width: 80%;
+        margin: auto;
+      }
+      video {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AUDIO Y VIDEO</h1>
+    <section>
+      <h2>Audio</h2>
+      <audio src="media/cm-intro.mp3" controls autoplay muted></audio>
+    </section>
+    <section>
+      <h2>Video</h2>
+      <video
+        src="media/dalto-asi-hackearon-al-gobierno.mp4"
+        controls
+        autoplay
+        muted
+        loop
+      >
+        <!-- <track
+          src="captions.vtt"
+          default
+          kind="captions"
+          srclang="es"
+          label="Español (Latinoamérica)"
+        /> -->
+        Tu navegador no soporta video
+      </video>
+    </section>
+  </body>
+</html>

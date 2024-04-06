@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECT DATALIST OPTION</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      label {
+        font-size: 20px;
+        margin-right: 20px;
+      }
+      select {
+        width: 150px;
+        height: 30px;
+        font-size: 18px;
+      }
+      input {
+        height: 30px;
+        font-size: 18px;
+        text-align: center;
+      }
+      option {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SELECT, DATALIST Y OPTION</h1>
+    <section>
+      <h2>Select y Option</h2>
+      <label for="fruta">Elige fruta:</label>
+      <select name="fruta">
+        <option value="manzana">Manzana</option>
+        <option value="pera">Pera</option>
+        <option value="mandarina">Mandarina</option>
+        <option value="naranja">Naranja</option>
+        <option value="fresa">Fresa</option>
+      </select>
+      <br />
+      <br />
+      <label for="transporte">Elige transporte:</label>
+      <select name="transporte">
+        <option value="auto">Auto</option>
+        <option value="omnibus">Omnibus</option>
+        <option value="avion">Avión</option>
+        <option value="barco">Barco</option>
+      </select>
+    </section>
+    <section>
+      <h2>Datalist y Option</h2>
+      <label for="comida">Elige comida:</label>
+      <input list="comidas" id="comida" />
+      <datalist id="comidas">
+        <option value="pescado frito"></option>
+        <option value="tallarin saltado"></option>
+        <option value="lomo saltado"></option>
+        <option value="arroz chaufa"></option>
+      </datalist>
+      <br />
+      <br />
+      <label for="bebida">Elige bebida:</label>
+      <input list="bebidas" id="bebida" />
+      <datalist id="bebidas">
+        <option value="chicha morada"></option>
+        <option value="maracuyá"></option>
+        <option value="inka cola"></option>
+        <option value="limonada"></option>
+      </datalist>
+    </section>
+  </body>
+</html>
