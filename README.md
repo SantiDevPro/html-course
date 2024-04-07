@@ -4,7 +4,7 @@
 
 ## _📍 DESCRIPCION 📍_
 
-Este proyecto se realizó con el propósito de realizar una guía con los conceptos o definiciones hechas a mi propia comprensión de lo que voy aprendiendo del curso HTML
+Este proyecto se realizó con el propósito de realizar una guía con las definiciones hechas a mi propia comprensión de lo que voy aprendiendo del curso HTML
 
 ## _📝 DEFINICION_
 
