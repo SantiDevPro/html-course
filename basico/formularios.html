@@ -8,6 +8,21 @@
       :root {
         color-scheme: dark light;
       }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      form {
+        width: 95dvw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      input {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -22,7 +37,7 @@
         <br />
         <label>
           Clave:
-          <input type="password" name="clave" required />
+          <input type="password" name="clave" placeholder="********" required />
         </label>
         <br />
         <label>
@@ -45,7 +60,7 @@
         </label>
         <br />
         <label>
-          Tu cumpleaños:
+          Año de Nacimiento:
           <input type="date" name="cumple" required />
         </label>
         <br />

@@ -16,21 +16,35 @@
         margin: 20px;
       }
       textarea {
+        width: 300px;
+        height: 200px;
         font-size: 16px;
         padding: 10px;
         box-sizing: border-box;
+        resize: none;
+        /* form-sizing: content; */
       }
     </style>
   </head>
   <body>
     <h1>TEXTAREA Y LABEL</h1>
     <section>
-      <label for="coment">Coment:</label>
-      <textarea id="coment" style="resize: none" cols="30" rows="10"></textarea>
+      <label for="coment">Deje una breve descripción:</label>
+      <textarea
+        id="coment"
+        cols="30"
+        rows="10"
+        placeholder="Escribe una breve descripción"
+      ></textarea>
     </section>
     <section>
-      <label for="info">Informativo:</label>
-      <textarea id="info" style="resize: none" cols="30" rows="10"></textarea>
+      <label for="info">Deje su comentario:</label>
+      <textarea
+        id="info"
+        cols="30"
+        rows="10"
+        placeholder="Escribe un comentario"
+      ></textarea>
     </section>
   </body>
 </html>
