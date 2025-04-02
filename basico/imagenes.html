@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML BASICO</title>
+    <title>HTML BASICO - Imagenes</title>
     <style>
       :root {
         color-scheme: dark light;
         scrollbar-width: thin;
+      }
+      a {
+        color: green;
+        text-decoration: none;
+      }
+      a:hover {
+        color: yellow;
+        text-decoration: underline;
       }
       img {
         max-width: 100%;
@@ -15,18 +23,37 @@
     </style>
   </head>
   <body>
-    <h1 title="Titulo del sitio">HTML BASICO</h1>
-    <main>
-      <h2>IMAGENES</h2>
-      <img src="img/leon.jpg" alt="Imagen de león" title="Imagen de león" />
+    <header>
+      <h1>Imágenes</h1>
+      <p>
+        La etiqueta <code>img</code> sirve para renderizar fotos o imagenes en
+        la página web.
+      </p>
+    </header>
+    <nav>
       <hr />
-      <h2>RUTAS</h2>
-      <h3>Rutas Absolutas</h3>
-      <a href="https://www.youtube.com/" target="_blank">Ir a Youtube</a>
-      <h3>Rutas Relativas</h3>
-      <a href="enlaces.html">Ver etiqueta "a"</a>
+      <ul>
+        <li><a href="index.html">Encabezados y Párrafos</a></li>
+        <li><a href="enlaces.html">Enlaces</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="formularios.html">Formularios</a></li>
+      </ul>
+      <hr />
+    </nav>
+    <main>
+      <h2>Rutas Absolutas</h2>
+      <img
+        src="https://preview.redd.it/bjqai3h42bs91.png?width=640&crop=smart&auto=webp&s=86c80d4258b4db7d2ff636a26ac6d2608e9e8b1f"
+        alt="Image Faceless Void"
+        title="Faceless Void"
+      />
       <br />
-      <a href="listas.html">Ver etiqueta "ul" y "ol"</a>
+      <h2>Rutas Relativas</h2>
+      <img
+        src="/img/faceless-ia.png"
+        alt="Image Faceless Void"
+        title="Faceless Void"
+      />
     </main>
   </body>
 </html>

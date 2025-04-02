@@ -3,26 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML BASICO</title>
+    <title>HTML BASICO - Enlaces</title>
     <style>
       :root {
         color-scheme: dark light;
       }
+      a {
+        color: green;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: yellow;
+      }
     </style>
   </head>
   <body>
-    <h1 title="Titulo del sitio">HTML BASICO</h1>
+    <header>
+      <h1>Enlaces</h1>
+      <p>
+        En esta página aprenderás la etiqueta <code>a</code>, el cual sirve para
+        redireccionar a otra página.
+      </p>
+    </header>
+    <nav>
+      <hr />
+      <ul>
+        <li><a href="index.html">Encabezados y Párrafos</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="imagenes.html">Imágenes</a></li>
+        <li><a href="formularios.html">Formularios</a></li>
+      </ul>
+      <hr />
+    </nav>
     <main>
-      <h2>ENLACES</h2>
-      <a href="https://www.google.com.pe/?hl=es" target="_blank"
-        >Soy un enlace a google</a
+      <!-- Enlace externo -->
+      <h2>Enlace Externo</h2>
+      <a
+        href="https://www.google.com.pe/?hl=es"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Ir a Google Perú"
+        >Soy un enlace a Google</a
       >
       <br />
-      <a href="listas.html">Ver etiquetas de listas</a>
+
+      <h2>Enlace Interno a otra página</h2>
+      <a href="listas.html" title="Ver ejemplos de listas"
+        >Ver etiquetas de listas</a
+      >
       <br />
-      <a href="p-h.html">Ver etiquetas "p" y "headers"</a>
+
+      <h2>Enlace Interno a una sección de la misma página</h2>
+      <a href="#seccion-ejemplo" title="Ir a la sección de ejemplo"
+        >Ir a la sección de ejemplo</a
+      >
       <br />
-      <a href="imagenes.html">Ver etiqueta img</a>
+
+      <h2>Enlace a un correo electrónico</h2>
+      <a href="mailto:ejemplo@correo.com" title="Enviar un correo"
+        >Enviar un correo</a
+      >
+      <br />
+
+      <h2>Enlace a un número de teléfono</h2>
+      <a href="tel:+123456789" title="Llamar al número">Llamar al número</a>
     </main>
+
+    <!-- Sección de ejemplo para el enlace interno -->
+    <section id="seccion-ejemplo">
+      <h2>Sección de ejemplo</h2>
+      <p>
+        Este es un ejemplo de cómo enlazar a una sección dentro de la misma
+        página.
+      </p>
+    </section>
   </body>
 </html>
