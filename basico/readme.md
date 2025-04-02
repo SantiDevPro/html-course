@@ -1,57 +1,117 @@
-# **HTML BASICO**
+# **HTML BÁSICO** 🌐
+
+Este documento contiene una guía básica para aprender las etiquetas más importantes de HTML. Aquí encontrarás ejemplos y explicaciones para estructurar contenido web.
 
 ---
 
 ## _🎯 ESTRUCTURA DE UNA ETIQUETA_
 
-<img src="../img/estructura-de-etiqueta.png">
+<img src="../img/estructura-de-etiqueta.png" alt="Estructura de una etiqueta" width="400">
 
-## _🎯 ESTRUCTURA DE UNA PAGINA WEB_
+---
 
-<img src="../img/estructura-de-la-web.png">
+## _🎯 ESTRUCTURA DE UNA PÁGINA WEB_
 
-## _📄 PARRAFOS Y ENCABEZADOS_
+<img src="../img/estructura-de-la-web.png" alt="Estructura de una página web" width="400">
 
-- `p` | etiqueta para párrafos, usado para contenido escrito
-- `h1` | etiqueta para el titulo del sitio web
-- `h2` | etiqueta para subtitulos
-- `h3` | etiqueta para subtitulos de nivel 3
-- `h4` | etiqueta para subtitulos de nivel 4
-- `h5` | etiqueta para subtitulos de nivel 5
-- `h6` | etiqueta para subtitulos de nivel 6
+---
+
+## _📄 PÁRRAFOS Y ENCABEZADOS_
+
+| Etiqueta | Descripción                                               |
+| -------- | --------------------------------------------------------- |
+| `p`      | Define un párrafo, usado para contenido escrito.          |
+| `h1`     | Encabezado principal, usado para el título del sitio web. |
+| `h2`     | Subtítulo principal.                                      |
+| `h3`     | Subtítulo de nivel 3.                                     |
+| `h4`     | Subtítulo de nivel 4.                                     |
+| `h5`     | Subtítulo de nivel 5.                                     |
+| `h6`     | Subtítulo de nivel 6.                                     |
+
+### Ejemplo:
+
+```html
+<h1>Este es un título principal</h1>
+<h2>Este es un subtítulo</h2>
+<p>Este es un párrafo explicativo.</p>
+```
 
 ## _📝 LISTAS_
 
-- `ol` | etiqueta para crear una lista ordenada
-- `ul` | etiqueta para crear una lista desordenada
-- `li` | etiqueta para crear los items de las listas ordenadas y desordenadas
+| Etiqueta | Descripción                             |
+| -------- | --------------------------------------- |
+| `ol`     | Crea una lista ordenada.                |
+| `ul`     | Crea una lista desordenada.             |
+| `li`     | Define un elemento dentro de una lista. |
+
+### Ejemplo:
+
+```html
+<ul>
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+</ul>
+<ol>
+  <li>Primer elemento</li>
+  <li>Segundo elemento</li>
+</ol>
+```
 
 ## _🔗 ENLACES (básico)_
 
-- `a` | etiqueta que crea un enlace a otros sitios de la misma web u otras
-- `href` | atributo donde se especifica la ruta del sitio web a enlazar
-- `target` | atributo que indica donde abrir el enlace
+| Etiqueta | Descripción                                                |
+| -------- | ---------------------------------------------------------- |
+| `a`      | Crea un enlace a otros sitios o páginas.                   |
+| `href`   | Especifica la ruta del sitio web a enlazar.                |
+| `target` | Indica dónde abrir el enlace(`_blank` para nueva pestaña). |
+
+### Ejemplo:
+
+```html
+<a href="https://www.google.com" target="_blank">Ir a Google</a>
+```
 
 ## _🔷 IMAGENES_
 
-- `img` | etiqueta para mostrar imagenes
-- `src` | atributo donde se especifica la ruta a la imagen a mostrar
-- `alt` | atributo donde se indica algun texto que muestre en caso no se pueda mostrar la imagen
-- `title` | atributo para añadir una descripcion o titulo a una etiqueta y se muestra al pasar el cursor por encima del elemento
+| Etiqueta | Descripción                                                 |
+| -------- | ----------------------------------------------------------- |
+| `img`    | Muestra imágene en la página.                               |
+| `src`    | Especifica la ruta de la imagen.                            |
+| `alt`    | Texto alternativo que se muestra si la imagen no carga.     |
+| `title`  | Descripción que aparece al pasar el cursor sobre la imagen. |
+
+### Ejemplo:
+
+```html
+<img src="/img/hugo.png" alt="Image Hugo" title="Hugo Lee" />
+```
 
 ## _⚓ RUTAS_
 
-- `Rutas absolutas` | no importa en que sitio se esté posicionado no cambia
-- `Rutas relativas` | dependiendo del sitio donde se esté posicionado la ruta varia
+| Tipo de Ruta | Descripción                                       |
+| ------------ | ------------------------------------------------- |
+| `Absolutas`  | No cambian sin importar la ubicación del archivo. |
+| `Relativas`  | Dependen de la ubicación del archivo actual.      |
 
 ## _🔒 FORMULARIOS_
 
-- `form` | etiqueta para crear un formulario
-- `input` | etiqueta para ingresar datos, segun el dato tiene un distinto `type`
-- `type` | atributo que define el tipo de input a usar
-- `name` | atributo identificador de input
-- `placeholder` | atributo que ayuda a dar un ejemplo o guia al input
-- `required` | atributo usado para impedir el envio de un formulario si el input tiene su _`value`_ vacio
-- `value` | atributo que indica el valor de un input
+| Etiqueta      | Descripción                                                 |
+| ------------- | ----------------------------------------------------------- |
+| `form`        | Crea un formulario.                                         |
+| `input`       | Permite ingresar datos.                                     |
+| `type`        | Define el tipo de entrada (texto, contraseña, email, etc.). |
+| `name`        | Identificador del campo de entrada.                         |
+| `placeholder` | Texto guía dentro del campo de entrada.                     |
+| `required`    | Hace que el campo sea obligatorio.                          |
+| `value`       | Valor predeterminado del campo.                             |
+
+### Ejemplo:
+
+```html
+<form>
+  <input type="text" name="nombre" placeholder="Escribe tu nombre" required />
+  <input type="submit" value="Enviar" />
+</form>
+```
 
 ---
