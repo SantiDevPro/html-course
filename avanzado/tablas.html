@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TABLAS</title>
+    <title>HTML AVANZADO - Tablas</title>
     <style>
       :root {
         color-scheme: dark;
+      }
+      a {
+        color: green;
+        text-decoration: none;
+      }
+      a:hover {
+        color: yellow;
       }
       h1 {
         text-align: center;
@@ -47,41 +54,64 @@
     </style>
   </head>
   <body>
-    <h1>TABLAS</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Producto</th>
-          <th>Costo</th>
-          <th>Unidad</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Arroz</td>
-          <td>$2</td>
-          <td>1 KG</td>
-        </tr>
-        <tr>
-          <td>Azúcar</td>
-          <td>$3</td>
-          <td>1 KG</td>
-        </tr>
-        <tr>
-          <td>Leche</td>
-          <td>$5</td>
-          <td>1 unidad</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th class="header_total">Total</th>
-          <td colspan="2" class="dato_total">$10</td>
-        </tr>
-      </tfoot>
-      <caption>
-        TIENDA GATITA
-      </caption>
-    </table>
+    <header>
+      <h1>Tablas</h1>
+      <p>
+        En esta página aprenderás de la etiqueta <code>table</code> y sus demas
+        etiquetas que sirven para crear tablas.
+      </p>
+    </header>
+    <nav>
+      <hr />
+      <ul>
+        <li><a href="comentarios.html">Comentarios e Iconos</a></li>
+        <li><a href="lbl-textarea.html">Label y Textarea</a></li>
+        <li><a href="datalist-select.html">Datalist y Select</a></li>
+        <li><a href="fieldset-legend.html">Fieldset y Legend</a></li>
+        <li><a href="details-summary.html">Details y Summary</a></li>
+        <li><a href="audio-video.html">Audio y Video</a></li>
+        <li><a href="html-semantico.html">HTML Semántco</a></li>
+        <li><a href="metatags.html">Metatags</a></li>
+      </ul>
+      <hr />
+    </nav>
+    <main>
+      <h2>Creando una tabla</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Costo</th>
+            <th>Unidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Arroz</td>
+            <td>$2</td>
+            <td>1 KG</td>
+          </tr>
+          <tr>
+            <td>Azúcar</td>
+            <td>$3</td>
+            <td>1 KG</td>
+          </tr>
+          <tr>
+            <td>Leche</td>
+            <td>$5</td>
+            <td>1 unidad</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th class="header_total">Total</th>
+            <td colspan="2" class="dato_total">$10</td>
+          </tr>
+        </tfoot>
+        <caption>
+          TIENDA GATITA
+        </caption>
+      </table>
+    </main>
   </body>
 </html>

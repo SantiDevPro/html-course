@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML AVANZADO - Audio y Video</title>
+    <title>HTML AVANZADO - Comentarios e Iconos</title>
+    <!-- Forma para darle iconos al sitio web -->
+    <link rel="icon" href="/img/html.svg" type="image/svg" />
     <style>
       :root {
-        color-scheme: dark;
+        color-scheme: dark light;
       }
       a {
         color: green;
@@ -15,55 +17,42 @@
       a:hover {
         color: yellow;
       }
-      section {
-        width: 80%;
-        margin: auto;
-      }
-      video {
-        width: 100%;
-      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Audio y Video</h1>
+      <h1>Comentarios e Iconos</h1>
       <p>
-        Las etiquetas <code>audio</code> y <code>video</code> sirven para
-        incrustar contenido multimedia en tu página.
+        Hacer comentarios es muy util para explicar lo que se quiere lograr con
+        cada bloque o linea de codigo. Y los iconos son una manera de darle mas
+        estilo a tu página web.
       </p>
     </header>
     <nav>
       <hr />
       <ul>
-        <li><a href="comentarios.html">Comentarios e Iconos</a></li>
         <li><a href="lbl-textarea.html">Label y Textarea</a></li>
         <li><a href="datalist-select.html">Datalist y Select</a></li>
         <li><a href="fieldset-legend.html">Fieldset y Legend</a></li>
         <li><a href="details-summary.html">Details y Summary</a></li>
         <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="audio-video.html">Audio y Video</a></li>
         <li><a href="html-semantico.html">HTML Semántco</a></li>
         <li><a href="metatags.html">Metatags</a></li>
       </ul>
       <hr />
     </nav>
     <main>
-      <section>
-        <h2>Audio</h2>
-        <audio src="/media/cm-intro.mp3" controls autoplay muted></audio>
-      </section>
-      <section>
-        <h2>Video</h2>
-        <video src="/media/html-video.mp4" controls autoplay muted loop>
-          <!-- <track
-            src="captions.vtt"
-            default
-            kind="captions"
-            srclang="es"
-            label="Español (Latinoamérica)"
-          /> -->
-          Tu navegador no soporta video
-        </video>
-      </section>
+      <h2>Comentarios</h2>
+      <!-- Soy un comentario descriptivo -->
+      <!-- Aqui te dejo notas -->
+      <p>
+        Usados para dejar instrucciones, notas para otros desarrolladores que
+        vean el codigo
+      </p>
+      <br />
+      <h2>Iconos (favicon)</h2>
+      <p>Son usados para poner el icono o logo personalizado a la web</p>
     </main>
   </body>
 </html>

@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FIELDSET Y LEGEND</title>
+    <title>HTML AVANZADO - Fieldset y Legend</title>
     <style>
       :root {
         color-scheme: dark;
       }
       * {
         box-sizing: border-box;
+      }
+      a {
+        color: green;
+        text-decoration: none;
+      }
+      a:hover {
+        color: yellow;
       }
       form {
         padding: 20px;
@@ -36,36 +43,58 @@
     </style>
   </head>
   <body>
-    <h1>FIELDSET Y LEGEND</h1>
-    <form>
-      <fieldset>
-        <legend>Información Básica</legend>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" />
-        <br />
-        <br />
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" />
-        <br />
-        <br />
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" />
-        <br />
-        <br />
-        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
-        <input type="date" id="fecha-nacimiento" />
-      </fieldset>
-      <fieldset>
-        <legend>Redes Sociales</legend>
-        <label for="twitter">Twitter:</label>
-        <input type="text" id="twitter" />
-        <br />
-        <br />
-        <label for="instagram">Instagram:</label>
-        <input type="text" id="instagram" />
-      </fieldset>
-      <input type="submit" value="Enviar" />
-      <input type="reset" value="Reset" />
-    </form>
+    <header>
+      <h1>Fieldset y Legend</h1>
+      <p>
+        Las etiquetas <code>fieldset</code> y <code>legend</code> se usan para
+        organizar y etiquetar grupos de campos en un formulario.
+      </p>
+    </header>
+    <nav>
+      <hr />
+      <ul>
+        <li><a href="comentarios.html">Comentarios e Iconos</a></li>
+        <li><a href="lbl-textarea.html">Label y Textarea</a></li>
+        <li><a href="datalist-select.html">Datalist y Select</a></li>
+        <li><a href="details-summary.html">Details y Summary</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="audio-video.html">Audio y Video</a></li>
+        <li><a href="html-semantico.html">HTML Semántco</a></li>
+        <li><a href="metatags.html">Metatags</a></li>
+      </ul>
+      <hr />
+    </nav>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Información Básica</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" />
+          <br />
+          <br />
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" />
+          <br />
+          <br />
+          <label for="correo">Correo:</label>
+          <input type="email" id="correo" />
+          <br />
+          <br />
+          <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+          <input type="date" id="fecha-nacimiento" />
+        </fieldset>
+        <fieldset>
+          <legend>Redes Sociales</legend>
+          <label for="twitter">Twitter:</label>
+          <input type="text" id="twitter" />
+          <br />
+          <br />
+          <label for="instagram">Instagram:</label>
+          <input type="text" id="instagram" />
+        </fieldset>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Reset" />
+      </form>
+    </main>
   </body>
 </html>

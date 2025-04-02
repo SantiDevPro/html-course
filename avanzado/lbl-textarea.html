@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML AVANZADO - Audio y Video</title>
+    <title>HTML AVANZADO - Textarea y Label</title>
     <style>
       :root {
         color-scheme: dark;
@@ -16,31 +16,41 @@
         color: yellow;
       }
       section {
-        width: 80%;
-        margin: auto;
+        margin: 20px;
       }
-      video {
-        width: 100%;
+      label {
+        font-size: 20px;
+        margin: 20px;
+      }
+      textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 16px;
+        padding: 10px;
+        box-sizing: border-box;
+        resize: none;
+        /* form-sizing: content; */
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Audio y Video</h1>
+      <h1>textarea y Label</h1>
       <p>
-        Las etiquetas <code>audio</code> y <code>video</code> sirven para
-        incrustar contenido multimedia en tu página.
+        La etiqueta <code>label</code> se usa como etiqueta explicativa a
+        elementos de un formulario. La etiqueta <code>textarea</code> se usa
+        como campo de texto pero de varias lineas.
       </p>
     </header>
     <nav>
       <hr />
       <ul>
         <li><a href="comentarios.html">Comentarios e Iconos</a></li>
-        <li><a href="lbl-textarea.html">Label y Textarea</a></li>
         <li><a href="datalist-select.html">Datalist y Select</a></li>
         <li><a href="fieldset-legend.html">Fieldset y Legend</a></li>
         <li><a href="details-summary.html">Details y Summary</a></li>
         <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="audio-video.html">Audio y Video</a></li>
         <li><a href="html-semantico.html">HTML Semántco</a></li>
         <li><a href="metatags.html">Metatags</a></li>
       </ul>
@@ -48,21 +58,22 @@
     </nav>
     <main>
       <section>
-        <h2>Audio</h2>
-        <audio src="/media/cm-intro.mp3" controls autoplay muted></audio>
+        <label for="coment">Deje una breve descripción:</label>
+        <textarea
+          id="coment"
+          cols="30"
+          rows="10"
+          placeholder="Escribe una breve descripción"
+        ></textarea>
       </section>
       <section>
-        <h2>Video</h2>
-        <video src="/media/html-video.mp4" controls autoplay muted loop>
-          <!-- <track
-            src="captions.vtt"
-            default
-            kind="captions"
-            srclang="es"
-            label="Español (Latinoamérica)"
-          /> -->
-          Tu navegador no soporta video
-        </video>
+        <label for="info">Deje su comentario:</label>
+        <textarea
+          id="info"
+          cols="30"
+          rows="10"
+          placeholder="Escribe un comentario"
+        ></textarea>
       </section>
     </main>
   </body>

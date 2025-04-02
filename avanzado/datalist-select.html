@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SELECT DATALIST OPTION</title>
+    <title>HTML AVANZADO - Datalist y Select</title>
     <style>
       :root {
         color-scheme: dark;
+      }
+      a {
+        text-decoration: none;
+        color: green;
+      }
+      a:hover {
+        color: yellow;
       }
       label {
         font-size: 20px;
@@ -28,47 +35,77 @@
     </style>
   </head>
   <body>
-    <h1>SELECT, DATALIST Y OPTION</h1>
-    <section>
-      <h2>Select y Option</h2>
-      <label for="fruta">Elige fruta:</label>
-      <select name="fruta">
-        <option value="manzana">Manzana</option>
-        <option value="pera">Pera</option>
-        <option value="mandarina">Mandarina</option>
-        <option value="naranja">Naranja</option>
-        <option value="fresa">Fresa</option>
-      </select>
-      <br />
-      <br />
-      <label for="transporte">Elige transporte:</label>
-      <select name="transporte">
-        <option value="auto">Auto</option>
-        <option value="omnibus">Omnibus</option>
-        <option value="avion">Avión</option>
-        <option value="barco">Barco</option>
-      </select>
-    </section>
-    <section>
-      <h2>Datalist y Option</h2>
-      <label for="comida">Elige comida:</label>
-      <input list="comidas" id="comida" />
-      <datalist id="comidas">
-        <option value="pescado frito"></option>
-        <option value="tallarin saltado"></option>
-        <option value="lomo saltado"></option>
-        <option value="arroz chaufa"></option>
-      </datalist>
-      <br />
-      <br />
-      <label for="bebida">Elige bebida:</label>
-      <input list="bebidas" id="bebida" />
-      <datalist id="bebidas">
-        <option value="chicha morada"></option>
-        <option value="maracuyá"></option>
-        <option value="inka cola"></option>
-        <option value="limonada"></option>
-      </datalist>
-    </section>
+    <header>
+      <h1>Datalist y Select</h1>
+      <p>
+        La etiqueta <code>datalist</code> permite elegir entre una lista de
+        opciones que se puede escribir para buscar mejor las opciones.
+      </p>
+      <p>
+        La etiqueta <code>select</code> tambien proporciona elegir entre una
+        lista de opciones pero no se puede escribir para buscar.
+      </p>
+      <p>
+        La etiqueta <code>option</code> sirve para definir cada opción de las
+        listas.
+      </p>
+    </header>
+    <nav>
+      <hr />
+      <ul>
+        <li><a href="comentarios.html">Comentarios e Iconos</a></li>
+        <li><a href="lbl-textarea.html">Label y Textarea</a></li>
+        <li><a href="fieldset-legend.html">Fieldset y Legend</a></li>
+        <li><a href="details-summary.html">Details y Summary</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="audio-video.html">Audio y Video</a></li>
+        <li><a href="html-semantico.html">HTML Semántco</a></li>
+        <li><a href="metatags.html">Metatags</a></li>
+      </ul>
+      <hr />
+    </nav>
+    <main>
+      <section>
+        <h2>Select</h2>
+        <label for="fruta">Elige fruta:</label>
+        <select name="fruta">
+          <option value="manzana">Manzana</option>
+          <option value="pera">Pera</option>
+          <option value="mandarina">Mandarina</option>
+          <option value="naranja">Naranja</option>
+          <option value="fresa">Fresa</option>
+        </select>
+        <br />
+        <br />
+        <label for="transporte">Elige transporte:</label>
+        <select name="transporte">
+          <option value="auto">Auto</option>
+          <option value="omnibus">Omnibus</option>
+          <option value="avion">Avión</option>
+          <option value="barco">Barco</option>
+        </select>
+      </section>
+      <section>
+        <h2>Datalist</h2>
+        <label for="comida">Elige comida:</label>
+        <input list="comidas" id="comida" />
+        <datalist id="comidas">
+          <option value="pescado frito"></option>
+          <option value="tallarin saltado"></option>
+          <option value="lomo saltado"></option>
+          <option value="arroz chaufa"></option>
+        </datalist>
+        <br />
+        <br />
+        <label for="bebida">Elige bebida:</label>
+        <input list="bebidas" id="bebida" />
+        <datalist id="bebidas">
+          <option value="chicha morada"></option>
+          <option value="maracuyá"></option>
+          <option value="inka cola"></option>
+          <option value="limonada"></option>
+        </datalist>
+      </section>
+    </main>
   </body>
 </html>
